@@ -1,0 +1,52 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+<header>
+	<nav class="nav-bar">
+		<a href="/" class="nav-logo">HuskerJS</a>
+		<div class="nav-links">
+			<a href="/" class="nav-link">Home</a>
+			<a href="/about" class="nav-link">About</a>
+			<a href="/blog" class="nav-link">Blog</a>
+			<a href="/schedule" class="nav-link">Schedule</a>
+			<a href="/resources" class="nav-link">Resources</a>
+		</div>
+		<button>Contact</button>
+	</nav>
+</header>
+<div class="div">
+	<h1>Go Big Red</h1>
+	<p>Greatest fans in all of college football</p>
+</div>
+
+<style>
+/* Header */
+header {
+	background-color: black;
+}
+.nav-bar {
+	display: flex;
+	padding: 20px 20px;
+	justify-content: space-between;
+}
+.nav-logo {
+	font-size: 1.5rem;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+}
+.nav-logo:hover {
+	color: yellow;
+}
+.nav-link {
+	color: white;
+	text-decoration: none;
+	font-size: 1.10rem;
+}
+
+/* Hero */
+.div {
+	background-color: red;
+	color: white;
+}
+</style>
