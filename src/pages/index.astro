@@ -11,12 +11,20 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 			<a href="/schedule" class="nav-link">Schedule</a>
 			<a href="/resources" class="nav-link">Resources</a>
 		</div>
-		<button>Contact</button>
+		<div class="right-nav">
+			<input></input>
+			<button class="contact-btn">Contact</button>
+		</div>
+		
 	</nav>
 </header>
-<div class="div">
-	<h1>Go Big Red</h1>
-	<p>Greatest fans in all of college football</p>
+<div class="hero-div">
+	<div class="left-hero">
+		<h1>Go Big Red</h1>
+		<p>Greatest fans in all of college football</p>
+		<button>Read Blog</button>
+	</div>
+	<img src="https://res.cloudinary.com/tar-heel-dev-studio/image/upload/v1667772672/huskerjs_anhfcy.jpg" class="hero-image" />
 </div>
 
 <style>
@@ -43,10 +51,29 @@ header {
 	text-decoration: none;
 	font-size: 1.10rem;
 }
+.nav-link:hover {
+	color: red;
+}
+.right-nav {
+	display: flex;
+}
+.contact-btn {
+	margin-left: 4px;
+}
 
 /* Hero */
-.div {
+.hero-div {
 	background-color: red;
 	color: white;
+	display: flex;
+}
+.left-hero {
+	padding: 10px 30px;
+}
+
+.hero-image {
+	width: 400px;
+	height: 300px;
+	padding-left: 50px;
 }
 </style>
